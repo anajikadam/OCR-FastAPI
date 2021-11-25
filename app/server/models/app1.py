@@ -11,7 +11,7 @@ class Drive_OCR:
     def __init__(self,filename) -> None:
         self.filename = filename
         self.SCOPES = ['https://www.googleapis.com/auth/drive']
-        # self.credentials = "uploads/credentials.json"
+        self.credentials = "credentials.json"
         self.credjson = "token1.json"
         # self.credjson = os.environ.get('SECRET_KEY')
 
