@@ -11,25 +11,34 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark" style="background-color: #12508f!important;">
   <!-- Brand/logo -->
   <a class="navbar-brand" href="/">Ana-OCRFastAPI</a>
   
   <!-- Links -->
   <ul class="navbar-nav">
     <li class="nav-item">
-      <a class="nav-link" href="/ocr" target="_blank">OCR Home </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="/ocr/get_image" target="_blank">OCR UI</a>
+      <a class="nav-link" href="/ocr/getText/" target="_blank">OCR Post Url</a>
     </li>
   </ul>
 </nav>
 
 <div class="container">
   <h1>Welcome to the The Ana-OCRFastAPI | Web API </h1>
-  <p>Fast API application.</p>
-  <p><a href="/docs" target="_blank">Fast API Swagger UI</a> </p>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Image To text</h5>
+      <p class="card-text">Upload Image file and get extracted text in JSON format. </p>
+      <div>
+        <form action="/ocr/get_file/" enctype="multipart/form-data" method="post">
+          <label for="formFile" class="form-label">Upload Image File</label>
+          <input class="form-control form-control-lg" id="formFileLg" name="file" type="file" required>
+          <br>
+          <input type="submit" class="btn btn-primary" formtarget="_blank"/>
+        </form>
+      </div>
+    </div>
+  </div>
 </div>
 
 </body>
