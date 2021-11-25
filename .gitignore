@@ -132,4 +132,6 @@ dmypy.json
 # my File
 CMDs.txt
 token1.json
+.token1.json
 credentials.json
+.credentials.json
