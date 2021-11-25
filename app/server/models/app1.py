@@ -35,7 +35,7 @@ class Drive_OCR:
                             self.credentials, self.SCOPES)
                 creds = flow.run_local_server(port=0)
             # Save the credentials for the next run
-            with open(self.pickle, 'wb') as token:
+            with open(self.credjson, 'wb') as token:
                 pickle.dump(creds, token)
 
         service = build('drive', 'v3', credentials=creds)

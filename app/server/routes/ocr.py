@@ -43,7 +43,8 @@ async def get_file(file: UploadFile = File(...)):
     t = time.localtime()
     timestamp = time.strftime('%b-%d-%Y_%H%M', t)
     fileName = timestamp + '_' + f
-    file_name = "app/server/static/images/"+fileName
+    file_name = fileName
+    # file_name = "app/server/static/images/"+fileName
     with open(file_name,'wb+') as f:
         f.write(file.file.read())
         f.close()
