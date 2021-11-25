@@ -1,0 +1,5 @@
+﻿________________
+
+Handwritten Text Recognition
+Using TensorFlow 2.0
+1.
